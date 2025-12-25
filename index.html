@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .containerOfAllItems {
+        gap: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .theChangedUI {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f5f5f5;
+        border-radius: 12px;
+        min-height: 344px;
+        max-width: 500px;
+      }
+      .navigationButtons {
+        margin-top: 30px;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+      }
+      .currentSlideButton {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #24a3ff;
+        opacity: 0.2;
+      }
+      .backwardButton {
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #24a3ff;
+        border: none;
+      }
+      .forwardButton {
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #24a3ff;
+        border: none;
+      }
+      .hideTheOverflow {
+        display: flex;
+        overflow-x: hidden;
+        max-width: 500px;
+      }
+      .innerContent {
+        min-width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containerOfAllItems">
+      <div class="backwardNavigationButton">
+        <button class="backwardButton">&#10094;</button>
+      </div>
+
+      <div class="hideTheOverflow">
+        <div class="theChangedUI">
+          <p class="innerContent">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem qui
+            voluptates iure est voluptate ad. Quo, deserunt esse nobis tempora
+            delectus corrupti. Accusamus harum veniam sunt officia?
+            Voluptatibus, odio dolorem?
+          </p>
+          <p class="innerContent">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
+            sequi suscipit magni harum corrupti consequuntur! Deleniti harum
+            error dolorem tempore amet, ullam dicta maiores, consequuntur
+            consequatur, dolorum at laboriosam porro.
+          </p>
+
+          <p class="innerContent">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+            perspiciatis illo quia ipsum, assumenda distinctio blanditiis quos
+            natus quam eveniet! Dolor quisquam magnam deserunt placeat
+            provident, beatae dicta nam incidunt?
+          </p>
+        </div>
+      </div>
+
+      <div class="forwardNavigationButton">
+        <button class="forwardButton">&#10095;</button>
+      </div>
+    </div>
+
+    <div class="navigationButtons">
+      <div class="currentSlideButton"></div>
+      <div class="currentSlideButton"></div>
+      <div class="currentSlideButton"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
