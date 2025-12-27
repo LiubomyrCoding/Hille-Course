@@ -12,6 +12,7 @@ function currentSlide(index) {
   });
   innerContent[index].style.display = "block";
 }
+currentSlide(currentIndex)
 
 function nextSlide() {
   currentIndex++;
@@ -33,21 +34,16 @@ function previousSlide() {
   currentSlide(currentIndex);
 }
 
-backwardButton.addEventListener("click", function () {
-  previousSlide();
-});
+backwardButton.addEventListener("click", previousSlide)
 
-forwardButton.addEventListener("click", function () {
-  nextSlide();
-});
+forwardButton.addEventListener("click", nextSlide)
 
-// curentIndex = 3
 
-navigationButtons.addEventListener(('click'), function(event) {
-
-  if(event.target.tagName === 'DIV') {
-    currentSlide(innerContent.length)
-  }
+currentSlideButton.forEach((dot, index) => {
+  dot.addEventListener(('click'), function(event) {
+    navigationButtons.classList.remove('active')
+    event.target.classList.add('active')
+    currentIndex = index
+    currentSlide(currentIndex)
+  })
 })
-
-

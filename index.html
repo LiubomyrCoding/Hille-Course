@@ -22,7 +22,7 @@
         justify-content: center;
         align-items: center;
       }
-      .theChangedUI {
+      .theHiddenAndShowedSlides {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -43,6 +43,10 @@
         border-radius: 50%;
         background: #24a3ff;
         opacity: 0.2;
+      }
+      .currentSlideButton:active {
+        background: #24a3ff;
+        opacity: 1;
       }
       .backwardButton {
         color: #fff;
@@ -67,6 +71,32 @@
       }
       .innerContent {
         min-width: 500px;
+        animation-name: fade;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+      }
+
+      @keyframes fade {
+        0% {
+          margin-left: -100px;
+          opacity: 0;
+        }
+        25% {
+          margin-left: -60px;
+          opacity: 0.25;
+        }
+        50% {
+          margin-left: -30px;
+          opacity: 0.5;
+        }
+        75% {
+          margin-left: -20px;
+          opacity: 0.75;
+        }
+        100% {
+          margin-left: 0px;
+          opacity: 1;
+        }
       }
     </style>
   </head>
@@ -77,7 +107,7 @@
       </div>
 
       <div class="hideTheOverflow">
-        <div class="theChangedUI">
+        <div class="theHiddenAndShowedSlides">
           <p class="innerContent">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem qui
             voluptates iure est voluptate ad. Quo, deserunt esse nobis tempora
@@ -90,7 +120,6 @@
             error dolorem tempore amet, ullam dicta maiores, consequuntur
             consequatur, dolorum at laboriosam porro.
           </p>
-
           <p class="innerContent">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
             perspiciatis illo quia ipsum, assumenda distinctio blanditiis quos
