@@ -37,14 +37,14 @@
         gap: 15px;
         justify-content: center;
       }
-      .currentSlideButton {
+      .currentSlideButtons {
         width: 20px;
         height: 20px;
         border-radius: 50%;
         background: #24a3ff;
         opacity: 0.2;
       }
-      .currentSlideButton:active {
+      .currentSlideButtons:active {
         background: #24a3ff;
         opacity: 1;
       }
@@ -69,7 +69,7 @@
         overflow-x: hidden;
         max-width: 500px;
       }
-      .innerContent {
+      .textOnSlides{
         min-width: 500px;
         animation-name: fade;
         animation-duration: 0.3s;
@@ -108,23 +108,29 @@
 
       <div class="hideTheOverflow">
         <div class="theHiddenAndShowedSlides">
-          <p class="innerContent">
+          <p class="textOnSlides">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem qui
             voluptates iure est voluptate ad. Quo, deserunt esse nobis tempora
             delectus corrupti. Accusamus harum veniam sunt officia?
             Voluptatibus, odio dolorem?
           </p>
-          <p class="innerContent">
+          <p class="textOnSlides">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
             sequi suscipit magni harum corrupti consequuntur! Deleniti harum
             error dolorem tempore amet, ullam dicta maiores, consequuntur
             consequatur, dolorum at laboriosam porro.
           </p>
-          <p class="innerContent">
+          <p class="textOnSlides">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
             perspiciatis illo quia ipsum, assumenda distinctio blanditiis quos
             natus quam eveniet! Dolor quisquam magnam deserunt placeat
             provident, beatae dicta nam incidunt?
+          </p>
+          <p class="textOnSlides">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+            perspiciatis illo quia ipsum, assumenda distinctio blanditiis quos
+            natus quam eveniet! Dolor quisquam magnam deserunt placeat
+            provident, beatae dicta nam assumenda.
           </p>
         </div>
       </div>
@@ -135,9 +141,10 @@
     </div>
 
     <div class="navigationButtons">
-      <div class="currentSlideButton"></div>
-      <div class="currentSlideButton"></div>
-      <div class="currentSlideButton"></div>
+      <div class="currentSlideButtons"></div>
+      <div class="currentSlideButtons"></div>
+      <div class="currentSlideButtons"></div>
+      <div class="currentSlideButtons"></div>
     </div>
 
     <script src="script.js"></script>
