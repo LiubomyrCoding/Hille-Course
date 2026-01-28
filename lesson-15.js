@@ -11,10 +11,10 @@ function saveToLocalStorage() {
   localStorage.setItem("Counter", JSON.stringify(counter));
 }
 
-function createListItem() {
+function createListItem(text, index) {
   const newLi = document.createElement("li");
-  newLi.textContent = input.value;
-  newLi.dataset.index = arr.length - 1;
+  newLi.textContent = text;
+  newLi.dataset.index = index;
 
   const newButton = document.createElement("button");
   newButton.textContent = "Delete";
@@ -30,7 +30,7 @@ btn.addEventListener("click", function () {
   arr.push(input.value);
   saveToLocalStorage();
 
-  const newLi = createListItem();
+  const newLi = createListItem(input.value, arr.length -1);
   parent1.appendChild(newLi);
 
   counter++;
