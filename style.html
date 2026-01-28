@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      background: #323264;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .form {
+      padding: 30px;
+      background: #F5F5FA;
+      min-height: 612px;
+      max-width: 650px;
+      border-radius: 12px;
+    }
+    .text {
+      font-family: Arial;
+      font-weight: 700;
+      font-size: 38px;
+      background: linear-gradient(to right, #F0145A, #EF8080);
+      background-clip: text;
+      color: transparent;
+    }
+    .div1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 41px;
+    }
+    .btn1 {
+      background:linear-gradient(to right, #F0145A, #EF8080);
+      min-height: 32px;
+      min-width: 32px;
+      border-radius: 8px;
+      border: none;
+      color: #fff;
+      font-family: Arial;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="form">
+    
+
+    <div class="div1">
+      <p class="text">We would like to help you</p>
+
+      <button class="btn1">X</button>
+    </div>
+
+
+    <div class="div2">
+
+      <input type="text" class="input1" placeholder="Name">
+
+      <input type="text" class="input2" placeholder="Message">
+    </div>
+
+
+  <div class="div3">
+
+    <p class="text1">How to answer you?</p>
+
+    <input type="tel" class="input3" placeholder="Phone Number">
+
+    <input type="email" class="input4" placeholder="Email">
+
+  </div>
+
+  <div class="div4">
+    <input type="submit" class="btn">
+  </div>
+    
+  </form>
+
+  <script src="style.js"></script>
+</body>
+</html>
