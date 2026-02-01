@@ -4,149 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      html {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      .containerOfAllItems {
-        gap: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .theHiddenAndShowedSlides {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #f5f5f5;
-        border-radius: 12px;
-        min-height: 344px;
-        max-width: 500px;
-      }
-      .navigationButtons {
-        margin-top: 30px;
-        display: flex;
-        gap: 15px;
-        justify-content: center;
-      }
-      .currentSlideButtons {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background: #24a3ff;
-        opacity: 0.2;
-      }
-      .currentSlideButtons:active {
-        background: #24a3ff;
-        opacity: 1;
-      }
-      .backwardButton {
-        color: #fff;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background: #24a3ff;
-        border: none;
-      }
-      .forwardButton {
-        color: #fff;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background: #24a3ff;
-        border: none;
-      }
-      .hideTheOverflow {
-        display: flex;
-        overflow-x: hidden;
-        max-width: 500px;
-      }
-      .textOnSlides{
-        min-width: 500px;
-        animation-name: fade;
-        animation-duration: 0.3s;
-        animation-iteration-count: 1;
-      }
-
-      @keyframes fade {
-        0% {
-          margin-left: -100px;
-          opacity: 0;
-        }
-        25% {
-          margin-left: -60px;
-          opacity: 0.25;
-        }
-        50% {
-          margin-left: -30px;
-          opacity: 0.5;
-        }
-        75% {
-          margin-left: -20px;
-          opacity: 0.75;
-        }
-        100% {
-          margin-left: 0px;
-          opacity: 1;
-        }
-      }
-    </style>
+    <style></style>
   </head>
   <body>
-    <div class="containerOfAllItems">
-      <div class="backwardNavigationButton">
-        <button class="backwardButton">&#10094;</button>
-      </div>
+    <ul class="parent1">
+    </ul>
 
-      <div class="hideTheOverflow">
-        <div class="theHiddenAndShowedSlides">
-          <p class="textOnSlides">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem qui
-            voluptates iure est voluptate ad. Quo, deserunt esse nobis tempora
-            delectus corrupti. Accusamus harum veniam sunt officia?
-            Voluptatibus, odio dolorem?
-          </p>
-          <p class="textOnSlides">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-            sequi suscipit magni harum corrupti consequuntur! Deleniti harum
-            error dolorem tempore amet, ullam dicta maiores, consequuntur
-            consequatur, dolorum at laboriosam porro.
-          </p>
-          <p class="textOnSlides">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
-            perspiciatis illo quia ipsum, assumenda distinctio blanditiis quos
-            natus quam eveniet! Dolor quisquam magnam deserunt placeat
-            provident, beatae dicta nam incidunt?
-          </p>
-          <p class="textOnSlides">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
-            perspiciatis illo quia ipsum, assumenda distinctio blanditiis quos
-            natus quam eveniet! Dolor quisquam magnam deserunt placeat
-            provident, beatae dicta nam assumenda.
-          </p>
-        </div>
-      </div>
+    <input type="text"/>
+    <button class="btn">click</button>
+    
 
-      <div class="forwardNavigationButton">
-        <button class="forwardButton">&#10095;</button>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">The Elements Text:</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="navigationButtons">
-      <div class="currentSlideButtons"></div>
-      <div class="currentSlideButtons"></div>
-      <div class="currentSlideButtons"></div>
-      <div class="currentSlideButtons"></div>
-    </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="lesson-15.js"></script>
   </body>
 </html>
